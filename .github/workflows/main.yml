@@ -33,9 +33,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r backend/requirements.txt
 
-      - name: Test with ruff
+      - name: Check code with ruff
         run: |
-          ruff backend
+          ruff check backend
 
       - name: Test with Django tests
         env:
